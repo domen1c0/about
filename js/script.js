@@ -39,8 +39,4 @@ const a2 = document.getElementsByTagName('a')[2];
 const medias = document.getElementsByClassName('info-vars-medias')[0];
 const button_tema = document.getElementsByClassName('button-tema')[1];
 
-
-
-
-
 button.addEventListener('click', changeMode);

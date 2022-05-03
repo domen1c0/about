@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 :root{
-    --azul: #385eca;
-    --cinza: #fff;
+    --azul: #3c403b;
+    --cinza: #faf1e4;
 }
 
 *{
@@ -28,11 +28,13 @@ a{
 }
 
 a.dark-mode{
-    color: #79a617;
+    color: #eee;
 }
+
 a:hover{
-    color: rgb(146, 139, 139);
+    color: #618c56;
 }
+
 a.dark-mode:hover{
     color: #52740b;
 }
@@ -47,12 +49,12 @@ a.dark-mode:hover{
     color: var(--azul);
     font-size: 50px;
 }
+
 #nome-id.dark-mode{
     font-family: 'Fira Code', monospace;
     color: #eee;
     font-size: 50px;
 }
-
 
 #barra{
     justify-content: center;
@@ -64,6 +66,7 @@ a.dark-mode:hover{
     animation: animate 0.8s infinite;
     
 }
+
 #barra.dark-mode{
 
     padding: 0%; 
@@ -100,6 +103,7 @@ a.dark-mode:hover{
     color: var(--azul);
     font-size: 150%;
 }
+
 .desc{
     text-align: center;
     color: var(--azul);
@@ -114,7 +118,7 @@ a.dark-mode:hover{
 
 .tools{
     text-align: center;
-    color: #fc0808;
+    color: #618c56;
     font-size: 150%;
     font-weight: bold;
     margin-right: 18px;
@@ -123,7 +127,7 @@ a.dark-mode:hover{
 }
 
 .tools.dark-mode{
-    color: #569cd6;
+    color: #618c56;
 }
 
 .tools:hover{
@@ -133,7 +137,6 @@ a.dark-mode:hover{
 .tools.dark-mode:hover{
     color: #007acc;
 }
-
 
 .tools-div{
     justify-content: center;
@@ -145,6 +148,7 @@ a.dark-mode:hover{
 .icon-tools{
     animation-delay: 3s;
 }
+
 .icon-tools:hover{
     animation: go-back 2s infinite  ;
     
@@ -167,13 +171,13 @@ a.dark-mode:hover{
         transform: translatey(5px);
     }
 }
+
 #social-id{
     justify-content: center;
     display: flex;
     flex-direction: row;
     margin-top: 5%;
     margin-left: 1%;
-    
 }
 
 #social-id.dark-mode{
@@ -187,6 +191,7 @@ a.dark-mode:hover{
 .info-vars-medias{
     margin-right: 15px;
 }
+
 .info-vars-medias.dark-mode{
     color: #eee;
 }
@@ -220,9 +225,11 @@ input.dark-mode{
     transition: .3s ease all;
     font-family: 'Fira Code', monospace;
 }
+
 #btn-enviar.dark-mode{
     color:#eee;
 }
+
 .btn:hover{
     background-color: rgba(219, 210, 210, 0.473);
     color:rgb(255, 0, 0);
@@ -249,6 +256,7 @@ input.dark-mode{
     background-color:  #161516;
     color: #eee;
 }
+
 .button-tema:hover{
     background-color: #e5e8e8;
 }
