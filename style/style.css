@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+:root{
+    --azul: #385eca;
+    --cinza: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cinza);
+    font-family: 'Roboto Mono', monospace;
+}
+body.dark-mode{
+    background-color: #161516;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    transition: .2s ease all;
+}
+
+a.dark-mode{
+    color: #79a617;
+}
+a:hover{
+    color: rgb(146, 139, 139);
+}
+a.dark-mode:hover{
+    color: #52740b;
+}
+
+.nome{
+    margin-top: 10%;
+    text-align: center;
+}
+
+#nome-id{
+    font-family: 'Fira Code', monospace;
+    color: var(--azul);
+    font-size: 50px;
+}
+#nome-id.dark-mode{
+    font-family: 'Fira Code', monospace;
+    color: #eee;
+    font-size: 50px;
+}
+
+
+#barra{
+    margin-right: 22.7%;
+    padding: 0%; 
+    font-family: 'Fira Code', monospace;
+    color: var(--azul);
+    font-size: 170%;
+    animation: animate 0.8s infinite;
+    
+}
+#barra.dark-mode{
+    margin-right: 22.7%;
+    padding: 0%; 
+    font-family: 'Fira Code', monospace;
+    color: #eee;
+    font-size: 170%;
+    animation: animate 0.8s infinite;
+    
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+.info{
+    width: 0;
+    height: 0;
+    margin-left: 30%;
+    margin-top: 2%;
+    display: flex;
+}
+
+.info-vars{
+    color: var(--azul);
+    font-size: 150%;
+    padding: 0;
+
+}
+.desc{
+    text-align: center;
+    color: var(--azul);
+    font-size: 150%;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+}
+#desc-div.dark-mode{
+    color:#eee;
+}
+    
+
+.social-medias{
+    margin-left: 64%;
+}
+
+.tools{
+    text-align: center;
+    color: #fc0808;
+    font-size: 150%;
+    font-weight: bold;
+    margin-right: 18px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.tools.dark-mode{
+    color: #569cd6;
+}
+
+.tools:hover{
+    color: #ff9191;
+}
+
+.tools.dark-mode:hover{
+    color: #007acc;
+}
+
+
+.tools-div{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.icon-tools{
+    animation-delay: 3s;
+}
+.icon-tools:hover{
+    animation: go-back 2s infinite  ;
+    
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateY(5px);
+    }
+    25%{
+        transform: translatey(-5px);
+    }
+    50%{
+        transform: translatey(5px);
+    }
+    75%{
+        transform: translatey(-5px);
+    }
+    100%{
+        transform: translatey(5px);
+    }
+}
+#social-id{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 720px;
+    
+}
+
+#social-id.dark-mode{
+    color: #eee;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 720px;
+}
+
+.info-vars-medias{
+    
+    margin-right: 15px;
+}
+.info-vars-medias.dark-mode{
+    color: #eee;
+}
+
+.form{
+    margin-top: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+input{
+    background-color: var(--cinza);
+    border-style: solid;
+    border-color: var(--azul);
+    padding: 10px;
+    font-family: 'Fira Code', monospace;
+}
+
+input.dark-mode{
+    background-color: #161516;
+    border-color: #eee;
+}
+
+.btn{
+    background-color:rgba(0, 0, 0, 0);
+    border:none;
+    color:var(--azul);
+    padding: 15px;
+    font-size: 17px;
+    cursor:pointer;
+    transition: .3s ease all;
+    font-family: 'Fira Code', monospace;
+}
+#btn-enviar.dark-mode{
+    color:#eee;
+}
+.btn:hover{
+    background-color: rgba(219, 210, 210, 0.473);
+    color:rgb(255, 0, 0);
+}
+
+.button-tema{
+    background-color: var(--cinza);
+    border:none;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 916px;
+    font-family: 'Fira Code', monospace;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button-tema.dark-mode{
+    background-color:  #161516;
+    color: #eee;
+}
+.button-tema:hover{
+    background-color: #e5e8e8;
+}
+
+.button-tema.dark-mode:hover{
+    background-color:#000000;
+}
