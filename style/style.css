@@ -16,65 +16,42 @@ body{
     background-color: var(--cinza);
     font-family: 'Roboto Mono', monospace;
 }
+
 body.dark-mode{
-    background-color: #161516;
-    
+    background-color: #161516; 
 }
 
-a{
-    text-decoration: none;
-    color: #000;
-    transition: .2s ease all;
-}
 
-a.dark-mode{
-    color: #eee;
-}
-
-a:hover{
-    color: #618c56;
-}
-
-a.dark-mode:hover{
-    color: #52740b;
-}
-
+/*========NOME========*/
 .nome{
-    margin-top: 10%;
-    text-align: center;
+    margin-top:14vh;
+    display: flex;
+    margin-inline: auto;
+    justify-content: center;
 }
 
 #nome-id{
     font-family: 'Fira Code', monospace;
     color: var(--azul);
-    font-size: 50px;
+    font-size: 3.1rem;
 }
 
 #nome-id.dark-mode{
-    font-family: 'Fira Code', monospace;
     color: #eee;
-    font-size: 50px;
 }
-
+/*========BARRA========*/
 #barra{
     justify-content: center;
-    margin-right: 16em;
+    margin-right: 26.9rem;
     display: flex;
     font-family: 'Fira Code', monospace;
     color: var(--azul);
-    font-size: 170%;
+    font-size: 1.7rem;
     animation: animate 0.8s infinite;
-    
 }
 
 #barra.dark-mode{
-
-    padding: 0%; 
-    font-family: 'Fira Code', monospace;
     color: #eee;
-    font-size: 170%;
-    animation: animate 0.8s infinite;
-    
 }
 
 @keyframes animate {
@@ -91,66 +68,49 @@ a.dark-mode:hover{
     }
 }
 
-.info{
-    width: 0;
-    height: 0;
-    margin-left: 30%;
-    margin-top: 2%;
-    display: flex;
-}
-
-.info-vars{
-    color: var(--azul);
-    font-size: 150%;
-}
-
+/*=========DESC=========*/
 .desc{
     text-align: center;
     color: var(--azul);
-    font-size: 150%;
+    font-size: 1.5rem;
     font-weight: bold;
     max-width: 400px;
-    margin: 0 auto;
+    margin-inline: auto;
 }
+
 #desc-div.dark-mode{
     color:#eee;
 }
 
+/*=========TOOLS=========*/
 .tools{
-    text-align: center;
     color: #618c56;
-    font-size: 150%;
-    font-weight: bold;
-    margin-right: 18px;
+    font-size: 1.5rem;
+    font-weight: 700;
     cursor: pointer;
-    transition: .3s;
+    transition: .3s; 
 }
 
 .tools.dark-mode{
     color: #618c56;
 }
 
-.tools:hover{
-    color: #ff9191;
-}
-
-.tools.dark-mode:hover{
-    color: #007acc;
-}
-
 .tools-div{
     justify-content: center;
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    margin-top: 15px;
+    margin-top: 1.3rem;
+    margin-inline: auto;
+    gap: 2rem;
 }
 
 .icon-tools{
+    position: relative;
     animation-delay: 3s;
 }
 
 .icon-tools:hover{
-    animation: go-back 2s infinite  ;
+    animation: go-back 2s infinite;
     
 }
 
@@ -171,70 +131,33 @@ a.dark-mode:hover{
         transform: translatey(5px);
     }
 }
-
-#social-id{
+/*=========SOCIAL MEDIAS=========*/
+div.social-id{
     justify-content: center;
     display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    margin-left: 1%;
+    margin-top: 4rem;
+    margin-inline: auto;
+    gap: 1.8rem;
+}
+a.link{
+    text-decoration: none;
+    color: var(--azul);
+    transition: .2s ease all;
 }
 
-#social-id.dark-mode{
-    color: #eee;
-    display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    margin-left: 30%;
+a.link:hover{
+    color: #618c56;
 }
 
-.info-vars-medias{
-    margin-right: 15px;
-}
-
-.info-vars-medias.dark-mode{
+a.link.dark-mode{
     color: #eee;
 }
 
-.form{
-    margin-top: 25px;
-    justify-content: center;
-    display: flex;
+a.link.dark-mode:hover{
+    color: #618c56;
 }
 
-input{
-    background-color: var(--cinza);
-    border-style: solid;
-    border-color: var(--azul);
-    padding: 10px;
-    font-family: 'Fira Code', monospace;
-}
-
-input.dark-mode{
-    background-color: #161516;
-    border-color: #eee;
-}
-
-.btn{
-    background-color:rgba(0, 0, 0, 0);
-    border:none;
-    color:var(--azul);
-    padding: 15px;
-    font-size: 17px;
-    cursor:pointer;
-    transition: .3s ease all;
-    font-family: 'Fira Code', monospace;
-}
-
-#btn-enviar.dark-mode{
-    color:#eee;
-}
-
-.btn:hover{
-    background-color: rgba(219, 210, 210, 0.473);
-    color:rgb(255, 0, 0);
-}
-
+/*=========BUTTON TEMA=========*/
 .tema-div{
     justify-content: center;
     display: flex;
@@ -243,11 +166,11 @@ input.dark-mode{
 .button-tema{
     background-color: var(--cinza);
     border:none;
-    margin-top: 50px;
-    padding: 15px;
+    margin-top: 3rem;
+    padding: 1rem;
     font-family: 'Fira Code', monospace;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: .3s ease all;
 }
