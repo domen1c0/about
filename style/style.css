@@ -15,12 +15,14 @@
 body{
     background-color: var(--cinza);
     font-family: 'Roboto Mono', monospace;
+    margin-top: 10rem;
+    
 }
 
 body.dark-mode{
     background-color: #161516; 
+    
 }
-
 
 /*========NOME========*/
 .nome{
